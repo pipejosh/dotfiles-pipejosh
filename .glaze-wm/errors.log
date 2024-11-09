@@ -1,0 +1,125 @@
+21/8/2024 17:18:51
+GlazeWM.Infrastructure.Exceptions.FatalUserException: Failed to parse user config. Invalid value at property: '$.general.window_animations'.
+   at GlazeWM.Domain.UserConfigs.CommandHandlers.EvaluateUserConfigHandler.DeserializeUserConfig(String userConfigPath) in D:\a\glazewm\glazewm\GlazeWM.Domain\UserConfigs\CommandHandlers\EvaluateUserConfigHandler.cs:line 109
+   at GlazeWM.Domain.UserConfigs.CommandHandlers.EvaluateUserConfigHandler.Handle(EvaluateUserConfigCommand command) in D:\a\glazewm\glazewm\GlazeWM.Domain\UserConfigs\CommandHandlers\EvaluateUserConfigHandler.cs:line 49
+   at GlazeWM.Infrastructure.Bussing.Bus.Invoke[T](T command) in D:\a\glazewm\glazewm\GlazeWM.Infrastructure\Bussing\Bus.cs:line 48
+   at GlazeWM.Domain.UserConfigs.CommandHandlers.ReloadUserConfigHandler.Handle(ReloadUserConfigCommand command) in D:\a\glazewm\glazewm\GlazeWM.Domain\UserConfigs\CommandHandlers\ReloadUserConfigHandler.cs:line 35
+   at GlazeWM.Infrastructure.Bussing.Bus.Invoke[T](T command) in D:\a\glazewm\glazewm\GlazeWM.Infrastructure\Bussing\Bus.cs:line 48
+   at CallSite.Target(Closure, CallSite, Bus, Object)
+   at System.Dynamic.UpdateDelegates.UpdateAndExecuteVoid2[T0,T1](CallSite site, T0 arg0, T1 arg1)
+   at GlazeWM.Domain.UserConfigs.CommandHandlers.RunWithSubjectContainerHandler.Handle(RunWithSubjectContainerCommand command) in D:\a\glazewm\glazewm\GlazeWM.Domain\UserConfigs\CommandHandlers\RunWithSubjectContainerHandler.cs:line 28
+   at GlazeWM.Infrastructure.Bussing.Bus.Invoke[T](T command) in D:\a\glazewm\glazewm\GlazeWM.Infrastructure\Bussing\Bus.cs:line 48
+   at GlazeWM.Domain.UserConfigs.CommandHandlers.RegisterKeybindingsHandler.<>c__DisplayClass4_0.<Handle>b__1() in D:\a\glazewm\glazewm\GlazeWM.Domain\UserConfigs\CommandHandlers\RegisterKeybindingsHandler.cs:line 63
+Command history: HandleFatalExceptionCommand, EvaluateUserConfigCommand, ReloadUserConfigCommand, RunWithSubjectContainerCommand, FocusContainerUnderCursorCommand, FocusContainerUnderCursorCommand, FocusContainerUnderCursorCommand, FocusContainerUnderCursorCommand, FocusContainerUnderCursorCommand, FocusContainerUnderCursorCommand, FocusContainerUnderCursorCommand, FocusContainerUnderCursorCommand, FocusContainerUnderCursorCommand, FocusContainerUnderCursorCommand, FocusContainerUnderCursorCommand 
+State dump: {"id":"8a7fa223-2d5d-40cd-a0d3-3d1eee9377c0","x":0,"y":0,"width":0,"height":0,"type":"root","focus_index":0,"children":[{"device_name":"\\\\.\\DISPLAY1","id":"d95b1748-7911-4e78-a7d7-eefb33c4f429","x":0,"y":0,"width":1920,"height":1080,"type":"monitor","focus_index":0,"children":[{"tiling_direction":"horizontal","size_percentage":1,"name":"1","id":"83347bb3-1f8d-4b30-b82b-0a04f52f9947","x":0,"y":0,"width":1920,"height":1080,"type":"workspace","focus_index":0,"children":[{"floating_placement":{"left":640,"top":0,"right":1280,"bottom":1080,"x":640,"y":0,"width":640,"height":1080},"border_delta":{"left":0,"top":0,"right":0,"bottom":0},"handle":263962,"size_percentage":0.5,"id":"979b6de3-39b9-4873-9cf9-8b5b3ea675e9","x":0,"y":0,"width":957,"height":1080,"type":"window","focus_index":1,"children":[]},{"floating_placement":{"left":495,"top":39,"right":1425,"bottom":1041,"x":495,"y":39,"width":930,"height":1002},"border_delta":{"left":0,"top":0,"right":0,"bottom":0},"handle":395054,"size_percentage":0.5,"id":"0e6b99cd-816e-459f-9e6c-0331bcd34f58","x":962,"y":0,"width":957,"height":1080,"type":"window","focus_index":0,"children":[]}]}]}]}
+
+21/8/2024 17:19:36
+GlazeWM.Infrastructure.Exceptions.FatalUserException: Failed to parse user config. Invalid value at property: '$.general.window_animations'.
+   at GlazeWM.Domain.UserConfigs.CommandHandlers.EvaluateUserConfigHandler.DeserializeUserConfig(String userConfigPath) in D:\a\glazewm\glazewm\GlazeWM.Domain\UserConfigs\CommandHandlers\EvaluateUserConfigHandler.cs:line 109
+   at GlazeWM.Domain.UserConfigs.CommandHandlers.EvaluateUserConfigHandler.Handle(EvaluateUserConfigCommand command) in D:\a\glazewm\glazewm\GlazeWM.Domain\UserConfigs\CommandHandlers\EvaluateUserConfigHandler.cs:line 49
+   at GlazeWM.Infrastructure.Bussing.Bus.Invoke[T](T command) in D:\a\glazewm\glazewm\GlazeWM.Infrastructure\Bussing\Bus.cs:line 41
+   at GlazeWM.Domain.Common.CommandHandlers.PopulateInitialStateHandler.Handle(PopulateInitialStateCommand command) in D:\a\glazewm\glazewm\GlazeWM.Domain\Common\CommandHandlers\PopulateInitialStateHandler.cs:line 41
+   at GlazeWM.Infrastructure.Bussing.Bus.Invoke[T](T command) in D:\a\glazewm\glazewm\GlazeWM.Infrastructure\Bussing\Bus.cs:line 41
+   at GlazeWM.App.WindowManager.WmStartup.Run()
+Command history: HandleFatalExceptionCommand, EvaluateUserConfigCommand, PopulateInitialStateCommand 
+State dump: {"id":"efc10b3b-e6de-45de-bfb7-a3439a081dfe","x":0,"y":0,"width":0,"height":0,"type":"root","focus_index":0,"children":[]}
+
+21/8/2024 17:20:01
+GlazeWM.Infrastructure.Exceptions.FatalUserException: Failed to parse user config. Invalid value at property: '$.general.window_animations'.
+   at GlazeWM.Domain.UserConfigs.CommandHandlers.EvaluateUserConfigHandler.DeserializeUserConfig(String userConfigPath) in D:\a\glazewm\glazewm\GlazeWM.Domain\UserConfigs\CommandHandlers\EvaluateUserConfigHandler.cs:line 109
+   at GlazeWM.Domain.UserConfigs.CommandHandlers.EvaluateUserConfigHandler.Handle(EvaluateUserConfigCommand command) in D:\a\glazewm\glazewm\GlazeWM.Domain\UserConfigs\CommandHandlers\EvaluateUserConfigHandler.cs:line 49
+   at GlazeWM.Infrastructure.Bussing.Bus.Invoke[T](T command) in D:\a\glazewm\glazewm\GlazeWM.Infrastructure\Bussing\Bus.cs:line 41
+   at GlazeWM.Domain.Common.CommandHandlers.PopulateInitialStateHandler.Handle(PopulateInitialStateCommand command) in D:\a\glazewm\glazewm\GlazeWM.Domain\Common\CommandHandlers\PopulateInitialStateHandler.cs:line 41
+   at GlazeWM.Infrastructure.Bussing.Bus.Invoke[T](T command) in D:\a\glazewm\glazewm\GlazeWM.Infrastructure\Bussing\Bus.cs:line 41
+   at GlazeWM.App.WindowManager.WmStartup.Run()
+Command history: HandleFatalExceptionCommand, EvaluateUserConfigCommand, PopulateInitialStateCommand 
+State dump: {"id":"e71cb13d-e342-4f89-9931-75f83807b14a","x":0,"y":0,"width":0,"height":0,"type":"root","focus_index":0,"children":[]}
+
+21/8/2024 17:20:27
+GlazeWM.Infrastructure.Exceptions.FatalUserException: Failed to parse user config. Invalid value at property: '$.general.window_animations'.
+   at GlazeWM.Domain.UserConfigs.CommandHandlers.EvaluateUserConfigHandler.DeserializeUserConfig(String userConfigPath) in D:\a\glazewm\glazewm\GlazeWM.Domain\UserConfigs\CommandHandlers\EvaluateUserConfigHandler.cs:line 109
+   at GlazeWM.Domain.UserConfigs.CommandHandlers.EvaluateUserConfigHandler.Handle(EvaluateUserConfigCommand command) in D:\a\glazewm\glazewm\GlazeWM.Domain\UserConfigs\CommandHandlers\EvaluateUserConfigHandler.cs:line 49
+   at GlazeWM.Infrastructure.Bussing.Bus.Invoke[T](T command) in D:\a\glazewm\glazewm\GlazeWM.Infrastructure\Bussing\Bus.cs:line 41
+   at GlazeWM.Domain.Common.CommandHandlers.PopulateInitialStateHandler.Handle(PopulateInitialStateCommand command) in D:\a\glazewm\glazewm\GlazeWM.Domain\Common\CommandHandlers\PopulateInitialStateHandler.cs:line 41
+   at GlazeWM.Infrastructure.Bussing.Bus.Invoke[T](T command) in D:\a\glazewm\glazewm\GlazeWM.Infrastructure\Bussing\Bus.cs:line 41
+   at GlazeWM.App.WindowManager.WmStartup.Run()
+Command history: HandleFatalExceptionCommand, EvaluateUserConfigCommand, PopulateInitialStateCommand 
+State dump: {"id":"1f890e80-d7ef-47cb-bb0a-0e6347801835","x":0,"y":0,"width":0,"height":0,"type":"root","focus_index":0,"children":[]}
+
+21/8/2024 17:35:52
+System.ObjectDisposedException: Cannot access a disposed object.
+   at System.Reactive.Subjects.Subject`1.ThrowDisposed() in /_/Rx.NET/Source/src/System.Reactive/Subjects/Subject.cs:line 53
+   at System.Reactive.Subjects.Subject`1.OnNext(T value) in /_/Rx.NET/Source/src/System.Reactive/Subjects/Subject.cs:line 141
+   at GlazeWM.Bar.BarService.<>c__DisplayClass10_0.<CloseWindow>b__0() in D:\a\glazewm\glazewm\GlazeWM.Bar\BarService.cs:line 118
+   at System.Windows.Threading.DispatcherOperation.InvokeDelegateCore()
+   at System.Windows.Threading.DispatcherOperation.InvokeImpl()
+--- End of stack trace from previous location ---
+   at System.Windows.Threading.DispatcherOperation.Wait(TimeSpan timeout)
+   at System.Windows.Threading.Dispatcher.InvokeImpl(DispatcherOperation operation, CancellationToken cancellationToken, TimeSpan timeout)
+   at System.Windows.Threading.Dispatcher.Invoke(Action callback, DispatcherPriority priority, CancellationToken cancellationToken, TimeSpan timeout)
+   at System.Windows.Threading.Dispatcher.Invoke(Action callback)
+   at GlazeWM.Bar.BarService.CloseWindow(String deviceName) in D:\a\glazewm\glazewm\GlazeWM.Bar\BarService.cs:line 116
+   at GlazeWM.Bar.BarService.RestartApp() in D:\a\glazewm\glazewm\GlazeWM.Bar\BarService.cs:line 79
+   at GlazeWM.Bar.BarService.<StartApp>b__6_3(UserConfigReloadedEvent _) in D:\a\glazewm\glazewm\GlazeWM.Bar\BarService.cs:line 55
+   at System.Reactive.AnonymousSafeObserver`1.OnNext(T value) in /_/Rx.NET/Source/src/System.Reactive/AnonymousSafeObserver.cs:line 54
+   at System.Reactive.Subjects.Subject`1.OnNext(T value) in /_/Rx.NET/Source/src/System.Reactive/Subjects/Subject.cs:line 141
+   at GlazeWM.Infrastructure.Bussing.Bus.Emit[T](T event) in D:\a\glazewm\glazewm\GlazeWM.Infrastructure\Bussing\Bus.cs:line 87
+   at GlazeWM.Domain.UserConfigs.CommandHandlers.ReloadUserConfigHandler.Handle(ReloadUserConfigCommand command) in D:\a\glazewm\glazewm\GlazeWM.Domain\UserConfigs\CommandHandlers\ReloadUserConfigHandler.cs:line 53
+   at GlazeWM.Infrastructure.Bussing.Bus.Invoke[T](T command) in D:\a\glazewm\glazewm\GlazeWM.Infrastructure\Bussing\Bus.cs:line 48
+   at CallSite.Target(Closure, CallSite, Bus, Object)
+   at System.Dynamic.UpdateDelegates.UpdateAndExecuteVoid2[T0,T1](CallSite site, T0 arg0, T1 arg1)
+   at GlazeWM.Domain.UserConfigs.CommandHandlers.RunWithSubjectContainerHandler.Handle(RunWithSubjectContainerCommand command) in D:\a\glazewm\glazewm\GlazeWM.Domain\UserConfigs\CommandHandlers\RunWithSubjectContainerHandler.cs:line 53
+   at GlazeWM.Infrastructure.Bussing.Bus.Invoke[T](T command) in D:\a\glazewm\glazewm\GlazeWM.Infrastructure\Bussing\Bus.cs:line 48
+   at GlazeWM.Domain.UserConfigs.CommandHandlers.RegisterKeybindingsHandler.<>c__DisplayClass4_0.<Handle>b__1() in D:\a\glazewm\glazewm\GlazeWM.Domain\UserConfigs\CommandHandlers\RegisterKeybindingsHandler.cs:line 55
+Command history: HandleFatalExceptionCommand, FocusContainerUnderCursorCommand, RunWithSubjectContainerCommand, ResizeWindowBordersCommand, RunWithSubjectContainerCommand, ResizeWindowBordersCommand, RunWithSubjectContainerCommand, UpdateWorkspacesFromConfigCommand, RegisterKeybindingsCommand, EvaluateUserConfigCommand, ReloadUserConfigCommand, RunWithSubjectContainerCommand, FocusContainerUnderCursorCommand, FocusContainerUnderCursorCommand, FocusContainerUnderCursorCommand 
+State dump: {"id":"16f1d73d-a66d-4733-925b-bd97a5caac45","x":0,"y":0,"width":0,"height":0,"type":"root","focus_index":0,"children":[{"device_name":"\\\\.\\DISPLAY1","id":"6651b4fd-dddc-4ce2-a75b-2a73204abc49","x":0,"y":0,"width":1920,"height":1080,"type":"monitor","focus_index":0,"children":[{"tiling_direction":"horizontal","size_percentage":1,"name":"1","id":"9473e692-d2a2-44d3-bb0d-a9d036994046","x":5,"y":5,"width":1910,"height":1070,"type":"workspace","focus_index":0,"children":[{"floating_placement":{"left":650,"top":68,"right":1270,"bottom":1060,"x":650,"y":68,"width":620,"height":992},"border_delta":{"left":0,"top":0,"right":0,"bottom":0},"handle":263962,"size_percentage":0.5,"id":"818276e9-659b-4806-905f-1a8187279fb3","x":5,"y":5,"width":950,"height":1070,"type":"window","focus_index":1,"children":[]},{"floating_placement":{"left":650,"top":68,"right":1270,"bottom":1060,"x":650,"y":68,"width":620,"height":992},"border_delta":{"left":0,"top":0,"right":0,"bottom":0},"handle":395054,"size_percentage":0.5,"id":"ffe9e04e-5617-4171-b149-5fdf3c01719c","x":965,"y":5,"width":950,"height":1070,"type":"window","focus_index":0,"children":[]},{"id":"ce977f4c-7642-48a0-b3b1-ef6eb7566f08","x":0,"y":0,"width":0,"height":0,"type":"window","focus_index":2,"children":[]}]}]}]}
+
+21/8/2024 18:58:52
+System.ObjectDisposedException: Cannot access a disposed object.
+   at System.Reactive.Subjects.Subject`1.ThrowDisposed() in /_/Rx.NET/Source/src/System.Reactive/Subjects/Subject.cs:line 53
+   at System.Reactive.Subjects.Subject`1.OnNext(T value) in /_/Rx.NET/Source/src/System.Reactive/Subjects/Subject.cs:line 141
+   at GlazeWM.Bar.BarService.<>c__DisplayClass10_0.<CloseWindow>b__0() in D:\a\glazewm\glazewm\GlazeWM.Bar\BarService.cs:line 118
+   at System.Windows.Threading.DispatcherOperation.InvokeDelegateCore()
+   at System.Windows.Threading.DispatcherOperation.InvokeImpl()
+--- End of stack trace from previous location ---
+   at System.Windows.Threading.DispatcherOperation.Wait(TimeSpan timeout)
+   at System.Windows.Threading.Dispatcher.InvokeImpl(DispatcherOperation operation, CancellationToken cancellationToken, TimeSpan timeout)
+   at System.Windows.Threading.Dispatcher.Invoke(Action callback, DispatcherPriority priority, CancellationToken cancellationToken, TimeSpan timeout)
+   at System.Windows.Threading.Dispatcher.Invoke(Action callback)
+   at GlazeWM.Bar.BarService.CloseWindow(String deviceName) in D:\a\glazewm\glazewm\GlazeWM.Bar\BarService.cs:line 116
+   at GlazeWM.Bar.BarService.RestartApp() in D:\a\glazewm\glazewm\GlazeWM.Bar\BarService.cs:line 79
+   at GlazeWM.Bar.BarService.<StartApp>b__6_3(UserConfigReloadedEvent _) in D:\a\glazewm\glazewm\GlazeWM.Bar\BarService.cs:line 55
+   at System.Reactive.AnonymousSafeObserver`1.OnNext(T value) in /_/Rx.NET/Source/src/System.Reactive/AnonymousSafeObserver.cs:line 43
+   at System.Reactive.Sink`1.ForwardOnNext(TTarget value) in /_/Rx.NET/Source/src/System.Reactive/Internal/Sink.cs:line 49
+   at System.Reactive.Subjects.Subject`1.OnNext(T value) in /_/Rx.NET/Source/src/System.Reactive/Subjects/Subject.cs:line 141
+   at GlazeWM.Infrastructure.Bussing.Bus.Emit[T](T event) in D:\a\glazewm\glazewm\GlazeWM.Infrastructure\Bussing\Bus.cs:line 87
+   at GlazeWM.Domain.UserConfigs.CommandHandlers.ReloadUserConfigHandler.Handle(ReloadUserConfigCommand command) in D:\a\glazewm\glazewm\GlazeWM.Domain\UserConfigs\CommandHandlers\ReloadUserConfigHandler.cs:line 53
+   at GlazeWM.Infrastructure.Bussing.Bus.Invoke[T](T command) in D:\a\glazewm\glazewm\GlazeWM.Infrastructure\Bussing\Bus.cs:line 48
+   at CallSite.Target(Closure, CallSite, Bus, Object)
+   at System.Dynamic.UpdateDelegates.UpdateAndExecuteVoid2[T0,T1](CallSite site, T0 arg0, T1 arg1)
+   at GlazeWM.Domain.UserConfigs.CommandHandlers.RunWithSubjectContainerHandler.Handle(RunWithSubjectContainerCommand command) in D:\a\glazewm\glazewm\GlazeWM.Domain\UserConfigs\CommandHandlers\RunWithSubjectContainerHandler.cs:line 28
+   at GlazeWM.Infrastructure.Bussing.Bus.Invoke[T](T command) in D:\a\glazewm\glazewm\GlazeWM.Infrastructure\Bussing\Bus.cs:line 48
+   at GlazeWM.Domain.UserConfigs.CommandHandlers.RegisterKeybindingsHandler.<>c__DisplayClass4_0.<Handle>b__1() in D:\a\glazewm\glazewm\GlazeWM.Domain\UserConfigs\CommandHandlers\RegisterKeybindingsHandler.cs:line 55
+Command history: HandleFatalExceptionCommand, RunWithSubjectContainerCommand, MoveWindowToWorkspaceCommand, ResizeWindowBordersCommand, RunWithSubjectContainerCommand, ResizeWindowBordersCommand, RunWithSubjectContainerCommand, UpdateWorkspacesFromConfigCommand, RegisterKeybindingsCommand, EvaluateUserConfigCommand, ReloadUserConfigCommand, RunWithSubjectContainerCommand, SetFocusedDescendantCommand, SyncNativeFocusCommand, RedrawContainersCommand 
+State dump: {"id":"57d5afad-5377-4d39-90a5-50bd4e13e664","x":0,"y":0,"width":0,"height":0,"type":"root","focus_index":0,"children":[{"device_name":"\\\\.\\DISPLAY1","id":"7e43d82b-e6b7-41bf-be4a-ad335905841a","x":0,"y":0,"width":1920,"height":1080,"type":"monitor","focus_index":0,"children":[{"tiling_direction":"horizontal","size_percentage":1,"name":"1","id":"118433d9-38c0-4678-afac-48d4c2bba1cc","x":20,"y":20,"width":1880,"height":1040,"type":"workspace","focus_index":0,"children":[{"floating_placement":{"left":486,"top":10,"right":1434,"bottom":1070,"x":486,"y":10,"width":948,"height":1060},"border_delta":{"left":0,"top":0,"right":0,"bottom":0},"handle":198498,"size_percentage":0.5,"id":"926cd864-62a5-4050-9001-e88cda5edbb7","x":20,"y":20,"width":935,"height":1040,"type":"window","focus_index":1,"children":[]},{"floating_placement":{"left":10,"top":10,"right":1910,"bottom":1070,"x":10,"y":10,"width":1900,"height":1060},"border_delta":{"left":0,"top":0,"right":0,"bottom":0},"handle":198412,"size_percentage":0.5,"id":"170ac42e-55ae-44b4-a36b-4957923422c6","x":965,"y":20,"width":935,"height":1040,"type":"window","focus_index":0,"children":[]}]},{"tiling_direction":"horizontal","size_percentage":0,"name":"2","id":"b18785a4-ce68-4bec-b5b7-21dee3e23ddb","x":20,"y":20,"width":1880,"height":1040,"type":"workspace","focus_index":1,"children":[{"floating_placement":{"left":476,"top":1,"right":1444,"bottom":1080,"x":476,"y":1,"width":968,"height":1079},"border_delta":{"left":7,"top":0,"right":7,"bottom":7},"handle":66926,"size_percentage":1,"id":"9c1c94be-1a0c-4350-ba12-2ae7af102238","x":20,"y":20,"width":1880,"height":1040,"type":"window","focus_index":0,"children":[]}]}]}]}
+
+4/10/2024 19:06:30
+System.ArgumentOutOfRangeException: Index must be within the bounds of the List. (Parameter 'index')
+   at System.Collections.Generic.List`1.Insert(Int32 index, T item)
+   at GlazeWM.Domain.Containers.Container.InsertChild(Int32 targetIndex, Container child) in D:\a\glazewm\glazewm\GlazeWM.Domain\Containers\Container.cs:line 157
+   at GlazeWM.Domain.Containers.CommandHandlers.AttachContainerHandler.Handle(AttachContainerCommand command) in D:\a\glazewm\glazewm\GlazeWM.Domain\Containers\CommandHandlers\AttachContainerHandler.cs:line 28
+   at GlazeWM.Infrastructure.Bussing.Bus.Invoke[T](T command) in D:\a\glazewm\glazewm\GlazeWM.Infrastructure\Bussing\Bus.cs:line 48
+   at GlazeWM.Domain.Containers.CommandHandlers.MoveContainerWithinTreeHandler.Handle(MoveContainerWithinTreeCommand command) in D:\a\glazewm\glazewm\GlazeWM.Domain\Containers\CommandHandlers\MoveContainerWithinTreeHandler.cs:line 70
+   at GlazeWM.Infrastructure.Bussing.Bus.Invoke[T](T command) in D:\a\glazewm\glazewm\GlazeWM.Infrastructure\Bussing\Bus.cs:line 48
+   at GlazeWM.Domain.Windows.CommandHandlers.MoveWindowHandler.SwapSiblingContainers(Window windowToMove, Direction direction) in D:\a\glazewm\glazewm\GlazeWM.Domain\Windows\CommandHandlers\MoveWindowHandler.cs:line 99
+   at GlazeWM.Domain.Windows.CommandHandlers.MoveWindowHandler.MoveTilingWindow(TilingWindow windowToMove, Direction direction) in D:\a\glazewm\glazewm\GlazeWM.Domain\Windows\CommandHandlers\MoveWindowHandler.cs:line 197
+   at GlazeWM.Domain.Windows.CommandHandlers.MoveWindowHandler.Handle(MoveWindowCommand command) in D:\a\glazewm\glazewm\GlazeWM.Domain\Windows\CommandHandlers\MoveWindowHandler.cs:line 49
+   at GlazeWM.Infrastructure.Bussing.Bus.Invoke[T](T command) in D:\a\glazewm\glazewm\GlazeWM.Infrastructure\Bussing\Bus.cs:line 48
+   at CallSite.Target(Closure, CallSite, Bus, Object)
+   at System.Dynamic.UpdateDelegates.UpdateAndExecuteVoid2[T0,T1](CallSite site, T0 arg0, T1 arg1)
+   at GlazeWM.Domain.UserConfigs.CommandHandlers.RunWithSubjectContainerHandler.Handle(RunWithSubjectContainerCommand command) in D:\a\glazewm\glazewm\GlazeWM.Domain\UserConfigs\CommandHandlers\RunWithSubjectContainerHandler.cs:line 53
+   at GlazeWM.Infrastructure.Bussing.Bus.Invoke[T](T command) in D:\a\glazewm\glazewm\GlazeWM.Infrastructure\Bussing\Bus.cs:line 48
+   at GlazeWM.Domain.UserConfigs.CommandHandlers.RegisterKeybindingsHandler.<>c__DisplayClass4_0.<Handle>b__1() in D:\a\glazewm\glazewm\GlazeWM.Domain\UserConfigs\CommandHandlers\RegisterKeybindingsHandler.cs:line 55
+Command history: HandleFatalExceptionCommand, AttachContainerCommand, FlattenSplitContainerCommand, DetachContainerCommand, MoveContainerWithinTreeCommand, MoveWindowCommand, RunWithSubjectContainerCommand, FocusContainerUnderCursorCommand, FocusContainerUnderCursorCommand, FocusContainerUnderCursorCommand, SetActiveWindowBorderCommand, SetFocusedDescendantCommand, FocusContainerUnderCursorCommand, FocusContainerUnderCursorCommand, FocusContainerUnderCursorCommand 
+State dump: {"id":"22900fc6-21da-45e0-b600-736b631be5df","x":0,"y":0,"width":0,"height":0,"type":"root","focus_index":0,"children":[{"device_name":"\\\\.\\DISPLAY1","id":"250d80f2-2c36-455b-85a4-4aceb7ca2929","x":0,"y":0,"width":1920,"height":1080,"type":"monitor","focus_index":0,"children":[{"tiling_direction":"horizontal","size_percentage":1,"name":"1","id":"763a8e1b-28d3-4cb3-a756-b74e15dc738c","x":5,"y":5,"width":1910,"height":1070,"type":"workspace","focus_index":0,"children":[{"floating_placement":{"left":5,"top":5,"right":1915,"bottom":1075,"x":5,"y":5,"width":1910,"height":1070},"border_delta":{"left":0,"top":0,"right":0,"bottom":0},"handle":264434,"size_percentage":1,"id":"af8b62f0-7a1e-406c-bfa8-c4e317d6c50a","x":5,"y":5,"width":1910,"height":1070,"type":"window","focus_index":0,"children":[]}]}]}]}
+
