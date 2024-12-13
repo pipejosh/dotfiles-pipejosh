@@ -1,0 +1,131 @@
+// Place your key bindings in this file to override the defaults
+[
+    //? MOVER LINEAS CON SHIFT + J || SHIFT + K
+
+    {
+    "key": "shift+k",
+        "command": "editor.action.moveLinesUpAction",
+        "when": "editorTextFocus && vim.mode == Normal"
+    },
+    {
+        "key": "shift+j",
+        "command": "editor.action.moveLinesDownAction",
+        "when": "editorTextFocus && vim.mode == Normal"
+    },
+    {
+        "key": "shift+k",
+        "command": "editor.action.moveLinesUpAction",
+        "when": "editorTextFocus && vim.mode == Visual"
+    },
+    {
+        "key": "shift+j",
+        "command": "editor.action.moveLinesDownAction",
+        "when": "editorTextFocus && vim.mode == Visual"
+    },
+
+    //? MOVER LINEAS CON SHIFT + J || SHIFT + K
+
+    //? EXPLORADOR DE ARCHIVOS
+
+    {
+        "key": "space e f",   
+        "command": "workbench.action.toggleSidebarVisibility",
+        "when": "editorTextFocus && vim.mode == Normal"
+    },
+    {
+        "key": "space e e",   
+        "command": "workbench.view.explorer",
+        "when": "editorTextFocus && vim.mode == Normal"
+    },
+
+    //? EXPLORADOR DE ARCHIVOS
+
+    //? SPLITS 
+
+    {
+        "key": "space s v",
+        "command": "workbench.action.splitEditorRight",
+        "when": "editorTextFocus && vim.mode == Normal"
+    },
+    {
+        "key": "space s d",
+        "command": "workbench.action.splitEditorDown",
+        "when": "editorTextFocus && vim.mode == Normal"
+    },
+    {
+        "key": "space s x",
+        "command": "workbench.action.closeEditorsAndGroup",
+        "when": "editorTextFocus && vim.mode == Normal"
+    },
+    {
+        "key": "space s h",
+        "command": "workbench.action.focusLeftGroup",
+        "when": "editorTextFocus && vim.mode == Normal"
+    },
+    {
+        "key": "space s j",
+        "command": "workbench.action.focusBelowGroup",
+        "when": "editorTextFocus && vim.mode == Normal"
+    },
+    {
+        "key": "space s k",
+        "command": "workbench.action.focusAboveGroup",
+        "when": "editorTextFocus && vim.mode == Normal"
+    },
+    {
+        "key": "space s l",
+        "command": "workbench.action.focusRightGroup",
+        "when": "editorTextFocus && vim.mode == Normal"
+    },
+
+    //? SPLITS 
+
+    //? FUZZY FINDER (O ALGO SIMILAR)
+
+    {
+        "key": "space f f",
+        "command": "workbench.action.quickOpen",
+        "when": "editorTextFocus && vim.mode == Normal"
+    },
+    {
+        "key": "space f c",
+        "command": "workbench.action.gotoSymbol",
+        "when": "editorTextFocus && vim.mode == Normal"
+    },
+    {
+        "key": "space f l",
+        "command": "workbench.action.gotoLine",
+        "when": "editorTextFocus && vim.mode == Normal"
+    },
+
+    //? FUZZY FINDER (O ALGO SIMILAR)
+
+    //? CODE ACTIONS + SNIPPETS HANDLING
+
+    {
+        "key": "space c a",
+        "command": "editor.action.quickFix",
+        "when": "editorTextFocus && vim.mode == Normal"
+    },
+    {
+        "key": "control + space",
+        "command": "editor.action.triggerSuggest",
+        "when": "editorTextFocus && vim.mode == Insert"
+    },
+
+    //? CODE ACTIONS + SNIPPETS HANDLING
+
+    //? TABS
+
+    // TODO CONTINUEW DOING TABS EDITORS SHORTCUTS
+
+    {
+        "key": "space t o",
+        "command": "workbench.action.files.newUntitledFile",
+        "when": "editorTextFocus && vim.mode == Normal"
+    }
+
+    //? TABS
+
+
+]
