@@ -147,7 +147,7 @@
     {
         "key": "space t 1",
         "command": "workbench.action.openEditorAtIndex1",
-        "when": "&& vim.mode == Normal"
+        "when": "vim.mode == Normal"
     },
     {
         "key": "space t 2",
